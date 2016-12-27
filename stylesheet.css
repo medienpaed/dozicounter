@@ -1,7 +1,15 @@
 div {
+    color: white;
     height: 100px;
     width: 100px;
-    background-color: #4ECDC4;
     border-radius: 5px;
     display: inline-block;
+}
+
+#counter {
+  background-color: #111111;
+}
+
+#button {
+  background-color: #110000;
 }
