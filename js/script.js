@@ -6,28 +6,32 @@ var kosten = (satz / (3600 * (1000 / intervall)));
 var counter = 0;
 var anwesende = 1;
 
+var disable = function (element){
+  $(element).addClass("disabled");
+  $(element).removeClass("active");
+};
+
+var enable = function (element){
+  $(element).addClass("active");
+  $(element).removeClass("disabled");
+};
+
 $(document).ready(function() {
     $("#anzeige").text(summe.toFixed(2)+" CHF");
     $("#start").click(function() {
       anwesende = document.getElementById("anwesende").value;;
-      $(this).addClass("disabled");
-      $(this).removeClass("active");
-      $("#stop").addClass("active");
-      $("#stop").removeClass("disabled");
-      $("#reset").addClass("disabled");
-      $("#reset").removeClass("active");
+      disable(this);
+      enable("#stop");
+      disable("#reset");
       counter = setInterval(function(){
         summe = summe + (kosten * anwesende);
         $("#anzeige").text(summe.toFixed(2)+" CHF");
       },intervall);
     });
     $("#stop").click(function(){
-      $(this).addClass("disabled");
-      $(this).removeClass("active");
-      $("#start").addClass("active");
-      $("#start").removeClass("disabled");
-      $("#reset").addClass("active");
-      $("#reset").removeClass("disabled");
+      disable(this);
+      enable("#start");
+      enable("#reset");
       clearInterval(counter);
     });
     $("#reset").click(function(){
