@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html>
-	<head>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Dozicounter</title>
-        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type='text/javascript' src='script.js'></script>
-	</head>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+  </head>
 	<body>
-        <div id="counter"></div>
-        <div id="button"><br /><br />klick!</div>
+		<div class="container">
+
+
+			<div class="row">
+ 				<div class="col-sm-12"><h1 class="page-header">Dozicounter <br /><small>Das Unsichtbare sichtbar machen</small></h1></div>
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-sm-8">
+ 				 <p class="lead" id="counter">0 CHF</p>
+ 			 </div>
+
+		   <div class="col-sm-4">
+				 <div class="form-group">
+ 				 	<label for="sel1">Anzahl der Anwesenden:</label>
+ 					<select class="form-control" id="sel1">
+	 					<option>1</option>
+	 					<option>2</option>
+	 					<option>3</option>
+	 					<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+ 					</select>
+				</div>
+				<button type="button" class="btn btn-success disabled" id="start">start</button>
+			 	<button type="button" class="btn btn-danger disabled" id="stop">stop</button>
+				<button type="button" class="btn btn-warning disabled" id="reset">reset</button>
+			 </div>
+
+
+	 	</div><!--container-->
+
 	</body>
 </html>
