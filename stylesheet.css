@@ -1,4 +1,5 @@
 div {
+    text-align: center;
     color: white;
     height: 100px;
     width: 100px;
@@ -7,9 +8,9 @@ div {
 }
 
 #counter {
-  background-color: #111111;
+  background-color: #dddddd;
 }
 
 #button {
-  background-color: #110000;
+  background-color: #ff0000;
 }
