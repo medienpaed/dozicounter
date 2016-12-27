@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    $('div').click(function() {
-        $(this).fadeOut('slow');
+    $('#counter').text('0');
+    $('#button').click(function() {
+        $('#counter').text('go!');
     });
 });
