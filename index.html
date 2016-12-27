@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
   </head>
 	<body>
 		<div class="container">
@@ -20,13 +21,13 @@
 			<div class="row">
 
 				<div class="col-sm-8">
- 				 <p class="lead" id="counter">0 CHF</p>
+ 				 <p class="lead" id="anzeige">0 CHF</p>
  			 </div>
 
 		   <div class="col-sm-4">
 				 <div class="form-group">
- 				 	<label for="sel1">Anzahl der Anwesenden:</label>
- 					<select class="form-control" id="sel1">
+ 				 	<label for="anwesende">Anzahl der Anwesenden:</label>
+ 					<select class="form-control" id="anwesende">
 	 					<option>1</option>
 	 					<option>2</option>
 	 					<option>3</option>
@@ -45,9 +46,9 @@
 						<option>16</option>
  					</select>
 				</div>
-				<button type="button" class="btn btn-success disabled" id="start">start</button>
+				<button type="button" class="btn btn-success active" id="start">start</button>
 			 	<button type="button" class="btn btn-danger disabled" id="stop">stop</button>
-				<button type="button" class="btn btn-warning disabled" id="reset">reset</button>
+				<button type="button" class="btn btn-warning active" id="reset">reset</button>
 			 </div>
 
 
